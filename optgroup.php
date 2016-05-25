@@ -18,29 +18,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		.level-1 {
 			margin-left: 10px;
 		}
+		.level-2 {
+			margin-left: 20px;
+		}
+		.level-3{
+			margin-left: 40px;
+		}
 	</style>
 </head>
 <body>
 <form method="POST">
 	<label for="selectSth">choose sth</label>
 	<select id="selectSth" class="selectpicker" name="select">
-		<optgroup label="optgroup level 1">
-			<option>level a</option>
-			<option>level b</option>
-			<option>level c</option>
-			<option>level d</option>
-			<optgroup  label="optgroup level 2">
-				<option class="level-1">level 3</option>
-				<option>level 3</option>
-				<option>level 3</option>
-				<optgroup  label="optgroup level 3">
-					<option>level 4</option>
-				</optgroup>
-			</optgroup>
-		</optgroup>
-		<option>level 1</option>
-		<option>level 1</option>
-		<option>level 1</option>
+		<option class="level-1">level 1</option>
+		<option class="level-2">level 1</option>
+		<option class="level-3">level 1</option>
 		<option>level 1</option>
 		<option>level 1</option>
 	</select>
