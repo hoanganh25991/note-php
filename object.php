@@ -1,16 +1,17 @@
 <?php
-
-$a = new ArrayObject(["name" => "anh"]);
+/**
+ * in PHP, $a is array, $b = $a
+ * >>> deep-clone on $a to create $b
+ */
+$a = new ArrayObject(["name" => "origin"]);
 $b = $a;
 
-//change on $a, not change on $b
-$a["name"] = "minh";
+//change on $a, change on $b
+$a["name"] = "changed";
 var_dump($b);
 
-//turn $a into object
+//turn $a into ACT LIKE object
 $a->setFlags(ArrayObject::ARRAY_AS_PROPS);
-$c = $a;
 
-//change on $a, what happen on $c
-$a->name = "khoa";
-var_dump($c);
+var_dump("\$a->name", $a->name);
+var_dump("\$a['name']", $a["name"]);
