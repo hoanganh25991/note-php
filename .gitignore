@@ -1,2 +1,6 @@
-docs
-.sqlite
+#like `root`, / explicit that from root, go inside, ex:
+#ignore "any" file, "*". the BETTET way "/*"
+/docs
+/.sqlite
+/*.mhtml
+/*.wmv
